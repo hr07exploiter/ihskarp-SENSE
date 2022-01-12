@@ -1,0 +1,182 @@
+body{
+  width: 100%;
+}
+*{
+box-sizing: border-box;
+list-style-type: none;
+text-decoration: none;
+}
+
+/****************************************
+Main styles
+*****************************************/
+
+body{
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.main-header{
+  padding-top: 1em;
+}
+
+.main-header,
+.nav{
+  display: flex;
+  flex-direction: column;
+}
+/****************************************
+logo
+*****************************************/
+
+.logo{
+  font-family: 'Bungee shade', sans-serif;
+  font-weight: 200;
+  font-size: 3.5em;
+  align-self: center;
+  color: #0883f7;
+  
+}
+
+/****************************************
+nav
+*****************************************/
+
+.nav a{
+  display: block;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5em;
+  color: #0883f7;
+  padding: .4em;
+}
+
+.nav a:hover{
+  border-bottom: solid 1px;
+}
+
+.nav a:active{
+  color: #0883f7;
+  
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.col{
+  font-family: dosis;
+}
+
+/****************************************
+Headings
+****************************************/
+
+h1{
+  color: #0883f7;
+  font-family: 'Fjalla One', sans-serif;
+  
+}
+
+/****************************************
+media queries
+****************************************/
+
+@media (min-width: 769px){
+  .main-header{
+    height: 200px;
+    justify-content: flex-end;
+    margin-bottom: 3em;
+  }
+  
+  .logo{
+    font-size: 3em;
+  }
+  
+  .nav{
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .main-content{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+   
+  }
+  
+  .col{
+    flex: 2 50%;
+    margin-right: 20px;
+    
+  }
+  
+ 
+}
+
+
+@media (min-width: 1025px){
+  .main-header{
+    flex-direction:row;align-items;
+  }
+  
+  .logo{
+    margin-right: auto;
+  }
+  
+  .nav{
+  margin-top: 0;
+  align-self: center;
+}
+  
+  .col{
+     flex: 1 30%;
+    
+  }
+  
+  .lastl{
+  display: block;
+  float: left;
+  max-width: 50%;
+  margin-left: 18%;
+    /*margin-right: auto;*/
+}
+.lastr{
+  display: block;
+  float: right;
+  max-width: 50%;
+  /*margin-left: auto;*/
+    margin-right: 18%;
+
+}
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
